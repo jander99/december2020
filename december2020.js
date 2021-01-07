@@ -28,4 +28,9 @@ function openGraphMetaKeywords() {
     metaOGurl.setAttribute('property', 'og:url')
     metaOGurl.content = document.location
     document.getElementsByTagName('head')[0].appendChild(metaOGurl)
+
+    var metaOGType = document.createElement('meta')
+    metaOGType.setAttribute('property', 'og:type')
+    metaOGType.content = 'website'
+    document.getElementsByTagName('head')[0].appendChild(metaOGType)
 }
