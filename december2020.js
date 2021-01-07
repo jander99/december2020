@@ -11,3 +11,21 @@ function getFakeDecemberCalendarDate() {
 function printFakeDecemberDate() {
     return "December " + getFakeDecemberCalendarDate() + ", 2020"
 }
+
+function openGraphMetaKeywords() {
+
+    var metaOGTitle = document.createElement('meta')
+    metaOGTitle.setAttribute('property', 'og:title')
+    metaOGTitle.content = printFakeDecemberDate()
+    document.getElementsByTagName('head')[0].appendChild(metaOGTitle)
+
+    var metaOGDesc = document.createElement('meta')
+    metaOGDesc.setAttribute('property', 'og:description')
+    metaOGDesc.content = "December 2020 just keeps going"
+    document.getElementsByTagName('head')[0].appendChild(metaOGDesc)
+
+    var metaOGurl = document.createElement('meta')
+    metaOGurl.setAttribute('property', 'og:url')
+    metaOGurl.content = document.location
+    document.getElementsByTagName('head')[0].appendChild(metaOGurl)
+}
