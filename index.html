@@ -2,11 +2,12 @@
     <head>
         <script src="december2020.js"></script>
         <link rel="stylesheet" href="style.css">
+        <script>document.title = printFakeDecemberDate();</script>
     </head>
 
     <body>
         <p id="_date">
-            Hello. Today is <script>printFakeDecemberDate(); </script>.
+            Hello. Today is <script>document.write(printFakeDecemberDate()); </script>.
         </p>
     </body>
 </html>
