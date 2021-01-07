@@ -19,6 +19,16 @@ function openGraphMetaKeywords() {
     metaOGTitle.content = printFakeDecemberDate()
     document.getElementsByTagName('head')[0].appendChild(metaOGTitle)
 
+    var metaOGType = document.createElement('meta')
+    metaOGType.setAttribute('property', 'og:type')
+    metaOGType.content = 'website'
+    document.getElementsByTagName('head')[0].appendChild(metaOGType)
+
+    var metaOGimage = document.createElement('meta')
+    metaOGimage.setAttribute('property', 'og:image')
+    metaOGimage.content = './dec.png'
+    document.getElementsByTagName('head')[0].appendChild(metaOGimage)
+
     var metaOGDesc = document.createElement('meta')
     metaOGDesc.setAttribute('property', 'og:description')
     metaOGDesc.content = "December 2020 just keeps going"
@@ -29,8 +39,5 @@ function openGraphMetaKeywords() {
     metaOGurl.content = document.location
     document.getElementsByTagName('head')[0].appendChild(metaOGurl)
 
-    var metaOGType = document.createElement('meta')
-    metaOGType.setAttribute('property', 'og:type')
-    metaOGType.content = 'website'
-    document.getElementsByTagName('head')[0].appendChild(metaOGType)
+
 }
